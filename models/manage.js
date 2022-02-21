@@ -12,7 +12,7 @@ const getLogs = (path) => {
   };
 
   let content = new Array();
-  const _files = getFiles("./models");
+  const _files = getFiles(path);
   for (let i = 0; i < _files.length; i++) {
     // console.log(_files[i]);
     content.push([_files[i]]);
