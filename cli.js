@@ -5,11 +5,12 @@ const models = require("./models/manage");
 program.version("1.0.0").description("CLI Log File Converter");
 
 program
-  .command("shows")
+  .command("shows <path>")
   .alias("s")
   .description("show log files")
-  .action(() => {
-    models.getLogs();
+  .showHelpAfterError("(add --help for additional information)")
+  .action((commandAndOptions) => {
+    models.getLogs(commandAndOptions);
   });
 
 program
