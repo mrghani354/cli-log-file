@@ -1,0 +1,29 @@
+{
+  "name": "log-cli",
+  "version": "1.0.0",
+  "description": "command line interface project",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "mohamad rizal ghani",
+  "license": "ISC",
+  "dependencies": {
+    "cli-table": "^0.3.11",
+    "commander": "^9.0.0",
+    "fs": "0.0.1-security",
+    "moment": "^2.29.1",
+    "path": "^0.12.7",
+    "split": "^1.0.1",
+    "underscore": "^1.13.2"
+  },
+  "preferGlobal": true,
+  "bin": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
